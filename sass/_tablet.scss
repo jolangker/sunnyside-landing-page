@@ -1,0 +1,164 @@
+@media screen and (min-width: 768px) {
+  header {
+    background: url(../images/desktop/image-header.jpg) fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    nav {
+      ul {
+        display: flex;
+        width: 60%;
+
+        li {
+          a {
+            color: white;
+          }
+        }
+
+        li:last-child {
+          background-color: white;
+          border-radius: 26px;
+          padding: 16px 26px;
+          cursor: pointer;
+
+          a {
+            color: black;
+          }
+        }
+
+        li:last-child:hover {
+          background-color: rgb(35, 166, 189);
+
+          a {
+            color: white;
+          }
+        }
+      }
+
+      .toggle-btn {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    #content {
+      .content-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      .content-wrapper > div {
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      .content-wrapper {
+        .img-transform {
+          grid-column: 2;
+          grid-row: 1;
+          background: url(../images/desktop/image-transform.jpg) no-repeat center center;
+          background-size: cover;
+          height: 100%;
+        }
+
+        .img-stand {
+          grid-row: 2;
+          grid-column: 1;
+          background: url(../images/desktop/image-stand-out.jpg) no-repeat center center;
+          background-size: cover;
+          height: 100%;
+        }
+
+        .graph {
+          grid-column: 1;
+          grid-row: 3;
+          background: url(../images/desktop/image-graphic-design.jpg) no-repeat center center;
+          background-size: cover;
+          height: 100%;
+
+          .text-wrapper {
+            width: 25rem;
+
+            h1 {
+              font-size: 1.8rem;
+            }
+
+            p {
+              padding: 0 2.5rem;
+            }
+          }
+        }
+
+        .photo {
+          grid-column: 2;
+          grid-row: 3;
+          background: url(../images/desktop/image-photography.jpg) no-repeat center center;
+          background-size: cover;
+          height: 100%;
+
+          .text-wrapper {
+            width: 25rem;
+
+            h1 {
+              font-size: 1.8rem;
+            }
+
+            p {
+              padding: 0 2.5rem;
+            }
+          }
+        }
+
+        .text-transform {
+          grid-column: 1;
+          grid-row: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .text-stand {
+          grid-column: 2;
+          grid-row: 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .text-wrapper {
+          width: 20rem;
+          padding: 0;
+          text-align: start;
+
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+    #testimonials {
+      .testimonials-wrapper {
+        padding: 0 4rem;
+      }
+    }
+
+    #gallery {
+      .gallery-wrapper > div {
+        height: 400px;
+      }
+    }
+  }
+
+  footer {
+    .footer-nav {
+      width: 40%;
+    }
+
+    .social {
+      width: 30%;
+    }
+  }
+}

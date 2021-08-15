@@ -1,0 +1,68 @@
+@media screen and (min-width: 1024px) {
+  header {
+    nav {
+      ul {
+        width: 40%;
+      }
+    }
+  }
+
+  main {
+    #content {
+      .content-wrapper {
+        .text-wrapper {
+          width: 30rem;
+
+          h1 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.2rem;
+          }
+        }
+
+        .graph,
+        .photo {
+          .text-wrapper {
+            width: 25rem;
+
+            h1 {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    #testimonials {
+      .testimonials-wrapper {
+        display: flex;
+
+        .card {
+          padding: 0 1rem;
+        }
+      }
+    }
+
+    #gallery {
+      .gallery-wrapper {
+        display: flex;
+      }
+
+      .gallery-wrapper > div {
+        width: 25%;
+      }
+    }
+  }
+
+  footer {
+    .footer-nav {
+      width: 25%;
+    }
+
+    .social {
+      width: 15%;
+    }
+  }
+}
